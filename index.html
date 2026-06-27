@@ -1,1 +1,115 @@
-Hello Github
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Pawit</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="brand">Pawit</div>
+          <a href="#contact">ติดต่อ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div>
+          <h1>สวัสดีครับ<br />ฉันคือ Pawit</h1>
+          <p>
+            ฉันเป็นผู้ที่ชื่นชอบการสร้างเว็บไซต์ที่ทั้งสวยงาม ใช้งานง่าย และมีความหมาย
+            ด้วยความสนใจในด้าน UI/UX และการพัฒนาเว็บหน้าแรกที่สร้างความประทับใจให้ผู้ใช้งาน
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#projects">ดูผลงาน</a>
+            <a class="btn btn-secondary" href="#about">เกี่ยวกับฉัน</a>
+          </div>
+        </div>
+
+        <div class="card profile">
+          <div class="avatar">P</div>
+          <h2>Web Developer & Designer</h2>
+          <p>ผมชอบเปลี่ยนไอเดียให้กลายเป็นหน้าเว็บที่น่าตื่นเต้นและใช้งานได้จริง</p>
+        </div>
+      </section>
+
+      <section id="about">
+        <h3 class="section-title">เกี่ยวกับฉัน</h3>
+        <div class="grid">
+          <div class="card">
+            <p>
+              ผมเป็นคนชอบเรียนรู้สิ่งใหม่ ๆ และพัฒนาทักษะด้านเว็บอยู่เสมอ
+              ด้วยความสนใจในการออกแบบและการเขียนโค้ด ผมพยายามสร้างเว็บไซต์ที่ไม่เพียงแค่ดูดี
+              แต่ยังช่วยให้ผู้ใช้เข้าถึงข้อมูลและบริการได้ง่ายขึ้น
+            </p>
+          </div>
+          <div class="card">
+            <h4>ทักษะที่สนใจ</h4>
+            <div>
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">UI/UX</span>
+              <span class="chip">Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h3 class="section-title">ผลงานและความสนใจ</h3>
+        <div class="project-list">
+          <div class="project">
+            <h4>เว็บไซต์ Portfolio ส่วนตัว</h4>
+            <p>สร้างหน้าเว็บที่แสดงตัวตนและผลงานในแบบที่เรียบหรูและเข้าใจง่าย</p>
+          </div>
+          <div class="project">
+            <h4>Landing Page สำหรับงานหรือบริการ</h4>
+            <p>ออกแบบหน้าแนะนำที่เน้นข้อความ สไตล์ และการดึงดูดความสนใจของผู้ชม</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="checkin" class="checkin-section">
+        <h3 class="section-title">ระบบเช็กชื่อด้วย Location ฟรี</h3>
+        <div class="card checkin-card">
+          <p>ระบบนี้ใช้ตำแหน่งจริงจากอุปกรณ์ของคุณผ่านเบราว์เซอร์แบบฟรี ไม่มีค่าใช้จ่ายและไม่ต้องใช้เซิร์ฟเวอร์</p>
+          <form id="checkin-form" class="checkin-form">
+            <label>
+              ชื่อ
+              <input id="name" name="name" type="text" placeholder="กรอกชื่อของคุณ" required />
+            </label>
+            <label>
+              ละติจูดจุดเป้าหมาย
+              <input id="targetLat" name="targetLat" type="number" step="any" value="13.7563" required />
+            </label>
+            <label>
+              ลองจิจูดจุดเป้าหมาย
+              <input id="targetLng" name="targetLng" type="number" step="any" value="100.5018" required />
+            </label>
+            <label>
+              รัศมี (เมตร)
+              <input id="radius" name="radius" type="number" step="any" value="100" required />
+            </label>
+            <button class="btn btn-primary" type="submit">เช็กชื่อ</button>
+          </form>
+          <div id="status" class="status info">พร้อมให้เช็กชื่อแล้ว</div>
+          <h4>ประวัติล่าสุด</h4>
+          <ul id="history-list" class="history-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="container">
+        <p>ติดต่อได้ที่: <a href="mailto:pawit@example.com">pawit@example.com</a></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
